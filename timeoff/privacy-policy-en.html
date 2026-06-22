@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <!--
-  TimeOff — Privacy Policy (English)
-  Provider: Coremini. Hosted for Google Play.
-    info@coremini.com.tr  → your real support email
-    2026-06-22 → kept as 2026-06-22; update if you publish later
-  Host this file at a public HTTPS URL (e.g. GitHub Pages) and paste the URL
-  into Play Console → App content → Privacy policy.
+  TimeOff — Privacy Policy (English). Provider: Coremini. Contact: info@coremini.com.tr.
+  Version 1.0 — Effective 22 June 2026. Drafted to satisfy GDPR (Arts. 12–22),
+  Türkiye KVKK (Law No. 6698), and the Google Play User Data policy.
+  Note for the developer: have qualified local counsel review before relying on
+  this for a specific jurisdiction; update the "Version/Effective date" on change.
 -->
 <html lang="en">
 <head>
@@ -13,97 +12,176 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>TimeOff — Privacy Policy</title>
 <style>
-  :root { --navy:#0F1A2B; --ink:#1c2733; --muted:#5b6675; --accent:#0d7a5f; }
+  :root { --navy:#0F1A2B; --ink:#1b2530; --muted:#56616f; --accent:#0d7a5f; --line:#e3e6ea; }
   * { box-sizing:border-box; }
   body { margin:0; font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-         color:var(--ink); line-height:1.65; background:#f6f7f9; }
-  .wrap { max-width:820px; margin:0 auto; padding:40px 22px 80px; background:#fff; }
-  header { border-bottom:3px solid var(--accent); padding-bottom:16px; margin-bottom:8px; }
-  h1 { color:var(--navy); font-size:30px; margin:0 0 4px; }
-  h2 { color:var(--navy); font-size:21px; margin:34px 0 8px; }
+         color:var(--ink); line-height:1.62; background:#f6f7f9; font-size:16px; }
+  .wrap { max-width:860px; margin:0 auto; padding:44px 24px 90px; background:#fff; }
+  header { border-bottom:3px solid var(--accent); padding-bottom:18px; margin-bottom:10px; }
+  h1 { color:var(--navy); font-size:30px; margin:0 0 6px; letter-spacing:-.3px; }
+  h2 { color:var(--navy); font-size:20px; margin:32px 0 8px; padding-top:6px; }
   h3 { font-size:16px; margin:18px 0 4px; }
+  p, li { color:var(--ink); }
   .meta { color:var(--muted); font-size:14px; }
+  .toc { background:#f0f3f5; border:1px solid var(--line); border-radius:10px; padding:14px 18px; font-size:14.5px; }
+  .toc a { color:var(--accent); text-decoration:none; }
   a { color:var(--accent); }
-  table { width:100%; border-collapse:collapse; margin:12px 0; font-size:15px; }
-  th,td { text-align:left; border:1px solid #e3e6ea; padding:9px 11px; vertical-align:top; }
+  table { width:100%; border-collapse:collapse; margin:12px 0; font-size:14.5px; }
+  th,td { text-align:left; border:1px solid var(--line); padding:9px 11px; vertical-align:top; }
   th { background:#f0f3f5; }
-  .callout { background:#eef6f3; border-left:4px solid var(--accent); padding:12px 16px; border-radius:6px; }
+  .callout { background:#eef6f3; border-left:4px solid var(--accent); padding:14px 18px; border-radius:6px; }
+  .muted { color:var(--muted); }
+  footer { margin-top:42px; color:var(--muted); font-size:13px; border-top:1px solid var(--line); padding-top:16px; }
   code { background:#eef0f2; padding:1px 5px; border-radius:4px; font-size:13px; }
-  footer { margin-top:40px; color:var(--muted); font-size:13px; border-top:1px solid #e3e6ea; padding-top:16px; }
 </style>
 </head>
 <body>
 <div class="wrap">
 <header>
   <h1>TimeOff — Privacy Policy</h1>
-  <div class="meta">Effective date: <strong>22 June 2026</strong> · App: <strong>TimeOff</strong> · Provider: <strong>Coremini</strong> · Contact: <a href="mailto:info@coremini.com.tr">info@coremini.com.tr</a></div>
+  <div class="meta">Version 1.0 · Effective date: <strong>22 June 2026</strong><br>
+  Provider / Data Controller: <strong>Coremini</strong> · Contact: <a href="mailto:info@coremini.com.tr">info@coremini.com.tr</a></div>
 </header>
 
-<p class="callout"><strong>In short:</strong> TimeOff is built privacy-first. It works on your device, with <strong>no account and no servers of ours</strong>. Your contacts, location, and call information are processed <strong>only on your phone</strong> to silence work calls when you're off the clock, and are <strong>never sent to us</strong>. The few exceptions — address search, maps, ads, and purchases — are explained below.</p>
+<p class="callout"><strong>Summary.</strong> TimeOff silences calls from the work contacts you choose while you are off the clock. It is engineered to be <strong>privacy-by-design</strong>: there is <strong>no user account, no sign-in, and no Coremini server</strong> that receives your data. Your contacts, location and call information are processed <strong>solely on your device</strong> and are <strong>never transmitted to us</strong>. A small number of features (address search, map display, optional advertising, and purchases) involve third-party services; these are described in Sections 6–7. This summary is for convenience only; the full policy below governs.</p>
 
-<h2>1. Who we are</h2>
-<p>TimeOff ("the app", "we", "us") is provided by Coremini. This policy explains what data the app processes, why, and your choices. It applies to the TimeOff mobile application.</p>
+<div class="toc">
+<strong>Contents.</strong>
+1. <a href="#scope">Scope</a> ·
+2. <a href="#controller">Data controller &amp; contact</a> ·
+3. <a href="#model">Our processing model</a> ·
+4. <a href="#data">Data, purposes &amp; legal bases</a> ·
+5. <a href="#perms">Device permissions</a> ·
+6. <a href="#third">Recipients &amp; third parties</a> ·
+7. <a href="#intl">International transfers</a> ·
+8. <a href="#retention">Retention</a> ·
+9. <a href="#security">Security</a> ·
+10. <a href="#rights">Your rights</a> ·
+11. <a href="#auto">Automated decisions</a> ·
+12. <a href="#children">Children</a> ·
+13. <a href="#storage">Local storage / SDKs</a> ·
+14. <a href="#changes">Changes</a> ·
+15. <a href="#complaints">Complaints &amp; authorities</a>
+</div>
 
-<h2>2. Our core principle: on-device processing</h2>
-<p>The app's main job — deciding whether to silence an incoming work call based on where you are and what time/shift it is — happens entirely on your device. We do not operate servers that receive your personal data, we do not have user accounts, and we do not sell or share your personal data for advertising or any other purpose beyond the limited third-party services listed in Section 4.</p>
+<h2 id="scope">1. Scope</h2>
+<p>This Privacy Policy explains how personal data is handled in connection with the <strong>TimeOff</strong> mobile application (the "App") for Android and iOS, published by Coremini ("Coremini", "we", "us"). It also serves, for users in the Republic of Türkiye, as the controller's disclosure ("aydınlatma metni") under Article 10 of the Law on the Protection of Personal Data No. 6698 ("KVKK"), and, for users in the European Economic Area and the United Kingdom, as the information notice under Articles 13–14 of the General Data Protection Regulation ("GDPR"). It does not apply to third-party services that you access through the App, which are governed by their own policies (see Section 6).</p>
 
-<h2>3. Data the app uses, and why</h2>
+<h2 id="controller">2. Data controller and contact</h2>
+<p>For the limited processing for which a controller is identifiable (see Section 3), the controller is <strong>Coremini</strong>. You can contact us, including to exercise your rights, at <a href="mailto:info@coremini.com.tr">info@coremini.com.tr</a>. We have not appointed a statutory Data Protection Officer because we are not required to; data-protection enquiries are handled at the contact address above.</p>
+
+<h2 id="model">3. Our processing model — privacy by design</h2>
+<p>TimeOff's core function — deciding whether to silence an incoming call based on the work contacts you selected, your workplace location, and your working hours or shift — is performed <strong>entirely on your device</strong>. Coremini operates no backend that collects, receives, stores, or has access to your contacts, your location, or your call information. Because we never obtain that data, <strong>Coremini does not act as a data controller in respect of that on-device processing; you remain in control of it.</strong> We act as a controller only for the narrow categories of data that necessarily leave your device when you use a feature that relies on a third party (Section 6), and even then we minimise such data.</p>
+
+<h2 id="data">4. Personal data, purposes and legal bases</h2>
+<p>The table sets out each category of personal data the App handles, the purpose, where it is processed, and the legal basis under the GDPR (Art. 6) and the KVKK (Art. 5). "On-device only" means the data is never transmitted to Coremini or to any third party.</p>
 <table>
-  <tr><th>Data / Permission</th><th>Why it's used</th><th>Where it goes</th></tr>
-  <tr><td><strong>Contacts</strong> (READ_CONTACTS)</td><td>So you can choose which "work contacts" to silence. Only the contacts you select are saved (their name and phone number).</td><td>Stored locally on your device, encrypted. Never transmitted off the device.</td></tr>
-  <tr><td><strong>Location</strong> — precise &amp; background (ACCESS_FINE/COARSE/BACKGROUND_LOCATION)</td><td>To detect when you leave or return to your workplace, so calls can be silenced while you're away — including while the app is closed.</td><td>Evaluated on-device against your workplace geofence. Your coordinates are stored locally, encrypted, and are never transmitted to us.</td></tr>
-  <tr><td><strong>Phone &amp; call screening</strong> (READ_PHONE_STATE, CallScreeningService)</td><td>To read the number of an incoming call and decide whether it is a work contact that should be silenced. A list of calls the app silenced ("who called me") is kept so you can review them.</td><td>Processed on-device. The silenced-call list is stored locally, encrypted, and never transmitted. The app does <strong>not</strong> read your full call log.</td></tr>
-  <tr><td><strong>Notifications</strong> (POST_NOTIFICATIONS)</td><td>Local reminders only — e.g. when a "snooze" period ends.</td><td>Generated and shown on-device. No data is sent.</td></tr>
-  <tr><td><strong>Exact alarms / boot / battery</strong> (SCHEDULE_EXACT_ALARM, RECEIVE_BOOT_COMPLETED, REQUEST_IGNORE_BATTERY_OPTIMIZATIONS)</td><td>To keep time/geofence-based silencing reliable after a reboot and while the device is in battery-saving mode.</td><td>Device-local OS scheduling only. No data is sent.</td></tr>
+  <tr><th>Data category</th><th>Purpose</th><th>Processed</th><th>Legal basis (GDPR / KVKK)</th></tr>
+  <tr>
+    <td>Selected work contacts (name &amp; phone number)</td>
+    <td>Let you choose which contacts to silence; identify those callers</td>
+    <td>On-device only (encrypted)</td>
+    <td>Performance of the user-requested service — Art. 6(1)(b); for accessing the contacts list, your <strong>consent</strong> — Art. 6(1)(a). KVKK: Art. 5(2)(c) and explicit consent (açık rıza).</td>
+  </tr>
+  <tr>
+    <td>Precise and background location</td>
+    <td>Detect leaving/returning to your workplace geofence, including while the App is closed</td>
+    <td>On-device only (encrypted)</td>
+    <td>Your <strong>consent</strong> (granted via the in-app disclosure and the OS "Allow all the time" prompt) — Art. 6(1)(a). KVKK: explicit consent.</td>
+  </tr>
+  <tr>
+    <td>Incoming caller number &amp; silenced-call log</td>
+    <td>Decide whether a call is a work contact to silence; show you "who called me"</td>
+    <td>On-device only (encrypted)</td>
+    <td>Performance of the service — Art. 6(1)(b); use of the Call Screening role requires your <strong>consent</strong> — Art. 6(1)(a). KVKK: Art. 5(2)(c) and explicit consent.</td>
+  </tr>
+  <tr>
+    <td>Workplace coordinates, working hours / shift, app settings</td>
+    <td>Run the silencing rules you configured</td>
+    <td>On-device only (encrypted)</td>
+    <td>Performance of the service — Art. 6(1)(b). KVKK: Art. 5(2)(c).</td>
+  </tr>
+  <tr>
+    <td>Address search query (text you type)</td>
+    <td>Geocode a workplace address you search for</td>
+    <td>Sent to OpenStreetMap (Section 6)</td>
+    <td>Performance of the search feature you invoked — Art. 6(1)(b). KVKK: Art. 5(2)(c).</td>
+  </tr>
+  <tr>
+    <td>Advertising identifiers &amp; app-interaction signals <span class="muted">(free tier, Android, only if ads are enabled)</span></td>
+    <td>Show ads and measure them</td>
+    <td>Collected by Google (Section 6)</td>
+    <td>Your <strong>consent</strong> for personalised ads via Google's consent flow — Art. 6(1)(a); our legitimate interest in funding a free tier for non-personalised ads — Art. 6(1)(f). KVKK: explicit consent.</td>
+  </tr>
+  <tr>
+    <td>Purchase / entitlement status</td>
+    <td>Unlock Premium; restore a prior purchase</td>
+    <td>Processed by Google Play (Section 6)</td>
+    <td>Performance of the purchase contract — Art. 6(1)(b). KVKK: Art. 5(2)(c).</td>
+  </tr>
+  <tr>
+    <td>Local notifications</td>
+    <td>Tell you when a "snooze" period ends</td>
+    <td>On-device only</td>
+    <td>Performance of the service — Art. 6(1)(b). KVKK: Art. 5(2)(c).</td>
+  </tr>
+</table>
+<p class="muted">Providing the above is not a statutory requirement, but the related feature cannot function without the corresponding data/permission; declining a permission simply disables that feature.</p>
+
+<h2 id="perms">5. Device permissions and why they are requested</h2>
+<table>
+  <tr><th>Permission</th><th>Why</th></tr>
+  <tr><td>Contacts (READ_CONTACTS)</td><td>Choose which work contacts to silence. Only those you select are stored, on-device and encrypted.</td></tr>
+  <tr><td>Location — precise &amp; background</td><td>Detect entering/leaving the workplace geofence, including while the App is closed. A prominent in-app disclosure is shown before the background-location request.</td></tr>
+  <tr><td>Phone state &amp; Call Screening role</td><td>Read the incoming number to decide whether to silence a work call. The App does <strong>not</strong> read your device call log and never blocks, rejects, or auto-replies.</td></tr>
+  <tr><td>Notifications</td><td>Local snooze-expiry reminder.</td></tr>
+  <tr><td>Exact alarm / boot-completed / battery-optimisation exemption</td><td>Keep time- and geofence-based silencing reliable after a reboot and under battery-saving modes. The battery exemption is optional.</td></tr>
+  <tr><td>Internet</td><td>Address search, map tiles, and (free tier) advertising.</td></tr>
 </table>
 
-<h2>4. Limited third-party services</h2>
-<p>A small number of features rely on third parties. When you use them, the data described below leaves your device for that specific purpose:</p>
+<h2 id="third">6. Recipients and third-party services</h2>
+<p>We do not sell your personal data and we do not share it with third parties for their own marketing. Personal data leaves your device only in the limited cases below, each as an independent service you invoke:</p>
+<h3>a) OpenStreetMap Foundation — address search &amp; map tiles</h3>
+<p>When you search for a workplace address, the text you type and your app-language are sent to the OpenStreetMap <em>Nominatim</em> service to return coordinates; displaying the map loads tiles from OpenStreetMap servers, which receive standard request metadata (e.g. the map area requested and your IP address). See the <a href="https://osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap Foundation Privacy Policy</a>.</p>
+<h3>b) Google — advertising (Google AdMob) and purchases (Google Play Billing)</h3>
+<p>If advertising is enabled in the free tier (Android only), Google AdMob (provided in the EEA/UK by Google Ireland Limited) may process advertising identifiers and usage signals to serve and measure ads; where required, consent is collected through Google's User Messaging Platform before personalised ads are shown, and buying Premium removes ads. Purchases are processed by Google Play Billing; Google handles the payment and we receive only your entitlement status — <strong>we never receive your payment-card details.</strong> See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">how Google uses data</a>.</p>
+<p>These providers act as independent controllers and/or our processors for the specific data described, under their own terms.</p>
 
-<h3>a) Address &amp; place search — OpenStreetMap / Nominatim</h3>
-<p>When you <em>search</em> for a workplace address, the text you type and your app language are sent to the OpenStreetMap Nominatim service to return matching coordinates. See the <a href="https://osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap Foundation Privacy Policy</a>.</p>
+<h2 id="intl">7. International data transfers</h2>
+<p>Because on-device data never leaves your device, it is not transferred internationally by us. For the third-party services in Section 6, data may be processed on servers outside your country, including in the United States. Those providers rely on their own transfer mechanisms — for transfers from the EEA/UK these include the European Commission's Standard Contractual Clauses and, where applicable, adequacy decisions (e.g. the EU–US Data Privacy Framework). For transfers from Türkiye, such processing is undertaken under the conditions of KVKK Article 9, including, where applicable, your explicit consent.</p>
 
-<h3>b) Map display — OpenStreetMap tiles</h3>
-<p>The workplace map loads map images from OpenStreetMap tile servers, which receive standard request data (such as the map area you view and your IP address) to deliver the tiles.</p>
+<h2 id="retention">8. Data retention</h2>
+<p>On-device data is retained on your device until you remove it. You can clear the silenced-call history at any time from the "Who called me" screen, edit or delete your work contacts and workplaces in the App, and <strong>uninstalling the App permanently deletes all of its locally stored data.</strong> We hold no server-side copy to retain. Third-party providers (Section 6) retain data under their own policies.</p>
 
-<h3>c) Advertising — Google AdMob (free tier, Android only)</h3>
-<p>If ads are enabled in the free version, Google AdMob may process advertising identifiers and usage signals to show ads, as described in <a href="https://policies.google.com/technologies/partner-sites">Google's policies</a>. Where required by law, you are asked for consent through Google's User Messaging Platform before personalized ads are shown. <strong>Buying Premium removes ads.</strong> The iOS version contains no ads.</p>
+<h2 id="security">9. Security measures</h2>
+<p>We apply appropriate technical and organisational measures (GDPR Art. 32; KVKK Art. 12). In particular, sensitive on-device data (silenced-call numbers, your work-contacts list, and workplace coordinates) is encrypted at rest using the operating system's hardware-backed keystore (AES-256), and automatic cloud backup and device-to-device transfer of that data are disabled so it cannot leave your device through a backup. Network requests to the third-party services above use encryption in transit (HTTPS). No method of storage or transmission is completely secure; you also help protect your data by securing your device.</p>
 
-<h3>d) Purchases — Google Play Billing</h3>
-<p>Premium is a one-time purchase processed by Google Play. Google handles the payment; we receive only whether you are entitled to Premium. <strong>We never see your payment details.</strong> Your entitlement is tied to your Google account, so reinstalling restores it.</p>
+<h2 id="rights">10. Your rights</h2>
+<p><strong>EEA/UK (GDPR).</strong> Subject to the conditions in the law, you have the right of access (Art. 15), rectification (Art. 16), erasure (Art. 17), restriction (Art. 18), data portability (Art. 20), and to object (Art. 21); where processing is based on consent, you may withdraw it at any time without affecting prior processing (Art. 7(3)); and you may lodge a complaint with a supervisory authority (Section 15).</p>
+<p><strong>Türkiye (KVKK Art. 11).</strong> You have the right to learn whether your data is processed; to request information; to learn the purpose and whether it is used accordingly; to know third parties to whom data is transferred; to request correction or deletion/destruction; to request notification of such actions to recipients; to object to results arising exclusively from automated analysis; and to claim compensation for damage caused by unlawful processing.</p>
+<p><strong>How to exercise.</strong> Because we do not hold your data on any server, you can exercise erasure directly by clearing data in-app or uninstalling. For any request, contact <a href="mailto:info@coremini.com.tr">info@coremini.com.tr</a>. We respond without undue delay and in any event within the statutory periods (generally within one month under the GDPR; within 30 days under the KVKK). Exercising these rights is free unless a request is manifestly unfounded or excessive.</p>
 
-<h2>5. What we do not do</h2>
+<h2 id="auto">11. Automated decision-making and profiling</h2>
+<p>The App automatically decides whether to silence a given call, based solely on the rules <em>you</em> configured (your chosen contacts, your workplace, and your hours/shift) and executed on your device. This does not produce legal or similarly significant effects on you within the meaning of GDPR Article 22, and it involves no profiling by Coremini. You can change or disable the rules, or turn protection off, at any time.</p>
+
+<h2 id="children">12. Children's privacy</h2>
+<p>TimeOff is intended for a general adult audience (working users) and is not directed to children. We do not knowingly process the personal data of children under the age of 16 (or the lower age provided by applicable national law, where relevant). If you believe a child has provided personal data, contact us and we will assist.</p>
+
+<h2 id="storage">13. Local storage and SDKs</h2>
+<p>The App stores its settings and the data described above in the device's local app storage (encrypted where sensitive). It does not use web cookies. It includes the software development kits necessary for the features described — map rendering, geocoding, geofencing, local notifications, in-app purchasing, and (free tier) advertising — each operating as described in this policy.</p>
+
+<h2 id="changes">14. Changes to this policy</h2>
+<p>We may update this policy as the App or the law evolves. Material changes will be indicated by updating the version and effective date above and, where appropriate, by an in-app notice. Continued use after an update constitutes acknowledgement of the revised policy to the extent permitted by law.</p>
+
+<h2 id="complaints">15. Complaints and supervisory authorities</h2>
+<p>If you have a concern, please contact us first at <a href="mailto:info@coremini.com.tr">info@coremini.com.tr</a> so we can try to resolve it. You also have the right to lodge a complaint with a supervisory authority:</p>
 <ul>
-  <li>No user accounts and no sign-in.</li>
-  <li>No servers of ours that collect your data.</li>
-  <li>No selling or sharing of your personal data for marketing.</li>
-  <li>No analytics/tracking SDKs beyond the advertising function above (when enabled).</li>
+  <li><strong>EEA:</strong> your local Data Protection Authority.</li>
+  <li><strong>United Kingdom:</strong> the Information Commissioner's Office (ICO), <a href="https://ico.org.uk">ico.org.uk</a>.</li>
+  <li><strong>Türkiye:</strong> the Personal Data Protection Authority (KVKK) — following an application to us under Article 13, you may complain to the Personal Data Protection Board (Kişisel Verileri Koruma Kurulu), <a href="https://www.kvkk.gov.tr">kvkk.gov.tr</a>.</li>
 </ul>
 
-<h2>6. Data retention &amp; deletion</h2>
-<p>Because data lives on your device, you are in control:</p>
-<ul>
-  <li>Clear the silenced-call history any time from the app's "Who called me" screen.</li>
-  <li>Change or remove your selected work contacts and workplaces in the app.</li>
-  <li><strong>Uninstalling the app permanently deletes all of its locally stored data.</strong></li>
-</ul>
-
-<h2>7. Security</h2>
-<p>Sensitive data stored on the device (silenced-call numbers, your work-contacts list, workplace coordinates) is encrypted at rest using Android's hardware-backed keystore (AES-256). Automatic cloud backup and device-to-device transfer of this data are disabled so it cannot leave your device through a backup.</p>
-
-<h2>8. Children</h2>
-<p>TimeOff is not directed to children and is intended for general audiences (working adults). We do not knowingly collect data from children.</p>
-
-<h2>9. Your rights</h2>
-<p>Under laws such as the EU/UK GDPR and Türkiye's KVKK, you have rights over your personal data (access, correction, deletion, objection). Because we hold no copy of your data on any server, you can exercise deletion directly by clearing data in-app or uninstalling. For any question or request, contact us at <a href="mailto:info@coremini.com.tr">info@coremini.com.tr</a>.</p>
-
-<h2>10. Changes to this policy</h2>
-<p>We may update this policy as the app evolves. Material changes will be reflected by updating the effective date above and, where appropriate, an in-app notice.</p>
-
-<h2>11. Contact</h2>
-<p>Coremini — <a href="mailto:info@coremini.com.tr">info@coremini.com.tr</a></p>
-
-<footer>© 2026 Coremini. TimeOff and this policy are provided for the TimeOff mobile application.</footer>
+<footer>© 2026 Coremini. This policy governs the TimeOff mobile application. Contact: info@coremini.com.tr.</footer>
 </div>
 </body>
 </html>
