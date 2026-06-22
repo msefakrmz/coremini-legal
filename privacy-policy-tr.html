@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--
+  TimeOff — Gizlilik Politikası (Türkçe)
+  Saglayici: Coremini. Google Play icin yayinlandi.
+    info@coremini.com.tr → gerçek destek e-postan
+    2026-06-22 → 22 Haziran 2026 olarak kaldı; daha sonra yayınlarsan güncelle
+  Bu dosyayı herkese açık bir HTTPS adresinde yayınla (ör. GitHub Pages) ve
+  adresi Play Console → Uygulama içeriği → Gizlilik politikası alanına yapıştır.
+-->
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TimeOff — Gizlilik Politikası</title>
+<style>
+  :root { --navy:#0F1A2B; --ink:#1c2733; --muted:#5b6675; --accent:#0d7a5f; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+         color:var(--ink); line-height:1.65; background:#f6f7f9; }
+  .wrap { max-width:820px; margin:0 auto; padding:40px 22px 80px; background:#fff; }
+  header { border-bottom:3px solid var(--accent); padding-bottom:16px; margin-bottom:8px; }
+  h1 { color:var(--navy); font-size:30px; margin:0 0 4px; }
+  h2 { color:var(--navy); font-size:21px; margin:34px 0 8px; }
+  h3 { font-size:16px; margin:18px 0 4px; }
+  .meta { color:var(--muted); font-size:14px; }
+  a { color:var(--accent); }
+  table { width:100%; border-collapse:collapse; margin:12px 0; font-size:15px; }
+  th,td { text-align:left; border:1px solid #e3e6ea; padding:9px 11px; vertical-align:top; }
+  th { background:#f0f3f5; }
+  .callout { background:#eef6f3; border-left:4px solid var(--accent); padding:12px 16px; border-radius:6px; }
+  footer { margin-top:40px; color:var(--muted); font-size:13px; border-top:1px solid #e3e6ea; padding-top:16px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>TimeOff — Gizlilik Politikası</h1>
+  <div class="meta">Yürürlük tarihi: <strong>22 Haziran 2026</strong> · Uygulama: <strong>TimeOff</strong> · Sağlayıcı: <strong>Coremini</strong> · İletişim: <a href="mailto:info@coremini.com.tr">info@coremini.com.tr</a></div>
+</header>
+
+<p class="callout"><strong>Kısaca:</strong> TimeOff gizlilik öncelikli tasarlandı. <strong>Hesap ve bize ait sunucu olmadan</strong>, cihazınızda çalışır. Kişileriniz, konumunuz ve arama bilgileriniz, mesai dışıyken iş aramalarını susturmak için <strong>yalnızca telefonunuzda</strong> işlenir ve <strong>bize asla gönderilmez</strong>. Birkaç istisna (adres arama, harita, reklam ve satın alma) aşağıda açıklanmıştır.</p>
+
+<h2>1. Biz kimiz</h2>
+<p>TimeOff ("uygulama", "biz") Coremini tarafından sunulur. Bu politika, uygulamanın hangi verileri neden işlediğini ve haklarınızı açıklar. KVKK kapsamında veri sorumlusu Coremini'dir.</p>
+
+<h2>2. Temel ilkemiz: cihazda işleme</h2>
+<p>Uygulamanın asıl işi — nerede olduğunuza ve hangi saatte/vardiyada olduğunuza göre gelen bir iş aramasının susturulup susturulmayacağına karar vermek — tamamen cihazınızda gerçekleşir. Kişisel verilerinizi alan bir sunucumuz yoktur, kullanıcı hesabı yoktur ve kişisel verilerinizi 4. bölümdeki sınırlı üçüncü taraf hizmetleri dışında hiçbir amaçla satmaz veya paylaşmayız.</p>
+
+<h2>3. Uygulamanın kullandığı veriler ve nedeni</h2>
+<table>
+  <tr><th>Veri / İzin</th><th>Neden kullanılır</th><th>Nereye gider</th></tr>
+  <tr><td><strong>Kişiler</strong> (READ_CONTACTS)</td><td>Hangi "iş kişilerini" susturacağınızı seçebilmeniz için. Yalnızca seçtiğiniz kişiler (ad ve telefon numarası) kaydedilir.</td><td>Cihazınızda şifreli olarak saklanır. Cihaz dışına asla aktarılmaz.</td></tr>
+  <tr><td><strong>Konum</strong> — hassas ve arka plan (ACCESS_FINE/COARSE/BACKGROUND_LOCATION)</td><td>İş yerinizden ayrıldığınızı veya döndüğünüzü algılamak için; böylece uzaktayken (uygulama kapalıyken bile) aramalar susturulabilir.</td><td>Cihazda iş yeri sınırınıza göre değerlendirilir. Koordinatlarınız cihazda şifreli saklanır, bize asla aktarılmaz.</td></tr>
+  <tr><td><strong>Telefon &amp; çağrı tarama</strong> (READ_PHONE_STATE, CallScreeningService)</td><td>Gelen aramanın numarasını okuyup, susturulması gereken bir iş kişisi olup olmadığına karar vermek için. Sustulan aramaların listesi ("kim aradı") incelemeniz için tutulur.</td><td>Cihazda işlenir. Susturulan arama listesi cihazda şifreli saklanır, asla aktarılmaz. Uygulama tüm arama kaydınızı <strong>okumaz</strong>.</td></tr>
+  <tr><td><strong>Bildirimler</strong> (POST_NOTIFICATIONS)</td><td>Yalnızca yerel hatırlatmalar — ör. "erteleme" süresi bittiğinde.</td><td>Cihazda üretilir ve gösterilir. Hiçbir veri gönderilmez.</td></tr>
+  <tr><td><strong>Tam alarm / açılış / pil</strong> (SCHEDULE_EXACT_ALARM, RECEIVE_BOOT_COMPLETED, REQUEST_IGNORE_BATTERY_OPTIMIZATIONS)</td><td>Yeniden başlatmadan sonra ve pil tasarrufu modunda zaman/konum tabanlı susturmanın güvenilir çalışması için.</td><td>Yalnızca cihaz içi işletim sistemi zamanlaması. Hiçbir veri gönderilmez.</td></tr>
+</table>
+
+<h2>4. Sınırlı üçüncü taraf hizmetleri</h2>
+<p>Az sayıda özellik üçüncü taraflara dayanır. Bunları kullandığınızda, aşağıdaki veriler yalnızca o amaç için cihazınızdan ayrılır:</p>
+
+<h3>a) Adres ve yer arama — OpenStreetMap / Nominatim</h3>
+<p>Bir iş yeri adresi <em>aradığınızda</em>, yazdığınız metin ve uygulama diliniz, eşleşen koordinatları döndürmek için OpenStreetMap Nominatim hizmetine gönderilir. Bkz. <a href="https://osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap Vakfı Gizlilik Politikası</a>.</p>
+
+<h3>b) Harita görüntüleme — OpenStreetMap karoları</h3>
+<p>İş yeri haritası, OpenStreetMap karo sunucularından harita görselleri yükler; bu sunucular karoları sunmak için standart istek verilerini (görüntülediğiniz harita alanı ve IP adresiniz gibi) alır.</p>
+
+<h3>c) Reklam — Google AdMob (ücretsiz sürüm, yalnızca Android)</h3>
+<p>Ücretsiz sürümde reklamlar etkinse, Google AdMob reklam göstermek için reklam tanımlayıcılarını ve kullanım sinyallerini işleyebilir (bkz. <a href="https://policies.google.com/technologies/partner-sites">Google politikaları</a>). Yasanın gerektirdiği yerlerde, kişiselleştirilmiş reklamlar gösterilmeden önce Google'ın Kullanıcı Mesajlaşma Platformu (UMP) aracılığıyla onayınız istenir. <strong>Premium satın almak reklamları kaldırır.</strong> iOS sürümünde reklam yoktur.</p>
+
+<h3>d) Satın alma — Google Play Faturalandırma</h3>
+<p>Premium tek seferlik bir satın almadır ve Google Play tarafından işlenir. Ödemeyi Google yürütür; biz yalnızca Premium hakkınız olup olmadığını öğreniriz. <strong>Ödeme bilgilerinizi asla görmeyiz.</strong> Hakkınız Google hesabınıza bağlıdır, bu yüzden yeniden kurduğunuzda geri yüklenir.</p>
+
+<h2>5. Yapmadıklarımız</h2>
+<ul>
+  <li>Kullanıcı hesabı ve oturum açma yok.</li>
+  <li>Verinizi toplayan bize ait sunucu yok.</li>
+  <li>Pazarlama için kişisel verilerinizin satışı veya paylaşımı yok.</li>
+  <li>Yukarıdaki reklam işlevi dışında (etkinken) analitik/izleme SDK'sı yok.</li>
+</ul>
+
+<h2>6. Verilerin saklanması ve silinmesi</h2>
+<p>Veriler cihazınızda yaşadığı için kontrol sizdedir:</p>
+<ul>
+  <li>Susturulan arama geçmişini "Kim aradı beni" ekranından istediğiniz an temizleyin.</li>
+  <li>Seçili iş kişilerinizi ve iş yerlerinizi uygulamadan değiştirin veya kaldırın.</li>
+  <li><strong>Uygulamayı kaldırmak, cihazda saklanan tüm verilerini kalıcı olarak siler.</strong></li>
+</ul>
+
+<h2>7. Güvenlik</h2>
+<p>Cihazda saklanan hassas veriler (susturulan arama numaraları, iş kişileri listeniz, iş yeri koordinatları) Android'in donanım destekli anahtar deposu kullanılarak (AES-256) şifrelenir. Bu verilerin otomatik bulut yedeklemesi ve cihazdan cihaza aktarımı kapalıdır; böylece bir yedek üzerinden cihazınızdan ayrılamaz.</p>
+
+<h2>8. Çocuklar</h2>
+<p>TimeOff çocuklara yönelik değildir ve genel kitleye (çalışan yetişkinler) yöneliktir. Bilerek çocuklardan veri toplamayız.</p>
+
+<h2>9. Haklarınız</h2>
+<p>KVKK ve AB/İngiltere GDPR gibi yasalar kapsamında kişisel verileriniz üzerinde haklarınız vardır (erişim, düzeltme, silme, itiraz). Verinizin hiçbir sunucumuzda kopyasını tutmadığımız için silme hakkınızı doğrudan uygulama içi temizleme veya kaldırma ile kullanabilirsiniz. Her türlü soru veya talep için: <a href="mailto:info@coremini.com.tr">info@coremini.com.tr</a>.</p>
+
+<h2>10. Bu politikadaki değişiklikler</h2>
+<p>Uygulama geliştikçe bu politikayı güncelleyebiliriz. Önemli değişiklikler yukarıdaki yürürlük tarihi güncellenerek ve uygun olduğunda uygulama içi bir bildirimle yansıtılır.</p>
+
+<h2>11. İletişim</h2>
+<p>Coremini — <a href="mailto:info@coremini.com.tr">info@coremini.com.tr</a></p>
+
+<footer>© 2026 Coremini. TimeOff ve bu politika, TimeOff mobil uygulaması için sunulmuştur.</footer>
+</div>
+</body>
+</html>
